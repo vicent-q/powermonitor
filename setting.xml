@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<settings>
+    <Columns>2</Columns>
+    <SwitchPeriod>30000</SwitchPeriod>
+    <RenderType>1</RenderType>
+</settings>
