@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="968,600" sizebox="4,4,4,4" caption="0,0,0,40" mininfo="600,400">
+<Font name="微软雅黑" size="14" bold="false" italic="false" />
+<Font name="微软雅黑" size="14" bold="true" italic="false" />
+<Font name="微软雅黑" size="10" bold="false" />
+<Font name="微软雅黑" size="12" bold="false" />
+<Font name="微软雅黑" size="13" bold="false" />
+<Font name="微软雅黑" size="14" bold="false" />
+<Style name="cb_style" shared="true" value="align=&quot;left&quot; valign=&quot;vcenter&quot; height=&quot;16&quot; textcolor=&quot;#FFAFADAD&quot; hottextcolor=&quot;#FFFFFFFF&quot; textpadding=&quot;20,0,6,0&quot; normalimage=&quot;res='cb_normal.png' dest='0,0,16.16'&quot; hotimage=&quot;res='cb_hot.png' dest='0,0,16.16'&quot; pushedimage=&quot;res='cb_pushed.png' dest='0,0,16.16'&quot; selectedimage=&quot;res='cb_selected.png' dest='0,0,16,16'&quot;" />
+<!--<Style name="combo_style" value="height=&quot;50&quot; textcolor=&quot;#FFFFFFFF&quot; textpadding=&quot;4,1,28,1&quot; normalimage=&quot;res='combo.png' source='0,0,161,28' corner='2,2,28,2'&quot; hotimage=&quot;res='combo.png' source='0,28,161,56' corner='2,2,28,2'&quot; pushedimage=&quot;res='combo.png' source='0,56,161,84' corner='2,2,28,2'&quot;" />-->
+<VerticalLayout bkcolor="#FF1E2328">
+    <HorizontalLayout height="40" name="ctnCaption" bkimage="caption_bk.png" bkcolor="#FF0E1A2F" bkcolor2="#FF060606">
+        <HorizontalLayout inset="10,6,0,0">
+            <!--<Button name="btnMenu" width="38" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_menu.png&apos; source=&apos;0,0,38,26&apos;" hotimage="file=&apos;btn_menu.png&apos; source=&apos;117,0,155,26&apos;" pushedimage="file=&apos;btn_menu.png&apos; source=&apos;78,0,116,26&apos;" focusedimage="file=&apos;btn_menu.png&apos; source=&apos;39,0,77,26&apos;" />-->
+            <Button name="btnMenu" valign="vcenter" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="logo_min_24.png" hotimage="logo_min_24.png" pushedimage="logo_min_24.png" focusedimage="logo_min_24.png" />
+            <Control width="6"/>
+            <Label text="网络流媒体多画面监测系统" height="26" textcolor="#FF888888" disabledtextcolor="#FFA7A6AA" align="left" valign="vcenter"/>
+        </HorizontalLayout>
+        <HorizontalLayout width="180" height="40">
+            <Option name="autoswitch" text="自动滚屏" float="true" pos="0,12,0,0" textcolor="#FF000000" textpadding="0,0,0,0" style="cb_style" width="80" autocalcwidth="true" />
+			<Button name="firstbtn" tooltip="第一页" float="true" pos="80,15,0,0"  width="10" height="10" normalimage="file='btn_first.png' source='13,14,26,27'" hotimage="file='btn_first.png' source='54,14,67,27'" pushedimage="file='btn_first.png' source='96,14,110,27'"/>
+            <Button name="prebtn" tooltip="上一页" float="true" pos="103,15,0,0"  width="10" height="10" normalimage="file='btn_previous.png' source='13,14,26,27'" hotimage="file='btn_previous.png' source='54,14,67,27'" pushedimage="file='btn_previous.png' source='96,14,110,27'"/>
+            <Button name="nextbtn" tooltip="下一页" float="true" pos="133,15,0,0" width="11" height="11" normalimage="file='btn_next.png' source='13,14,28,27'" hotimage="file='btn_next.png' source='54,14,69,27'" pushedimage="file='btn_next.png' source='96,14,112,27'"/>
+			<Button name="lastbtn" tooltip="最后一页" float="true" pos="155,15,0,0" width="10" height="10" normalimage="file='btn_last.png' source='13,14,26,27'" hotimage="file='btn_last.png' source='54,14,67,27'" pushedimage="file='btn_last.png' source='96,14,110,27'"/>
+            <!--<Combo name="pagenum" itemfont="2" float="true" pos="120,15,0,0" width="80" height="20" style="combo_style" textcolor="#FFFFFFFF" dropbox="hscrollbar=&quot;false&quot;" />-->
+        </HorizontalLayout>
+        <HorizontalLayout width="162" height="40">
+            <!--<Button name="btnConfigChannel" width="60" height="20" textcolor="#FF288add" hottextcolor="#FF0022FF" padding="10,10,0,0" />-->
+            <!--<Button name="btnConfigChannel" float="true" pos="31,14,0,0" width="24" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_channel.png&apos; source=&apos;0,0,24,13&apos;" hotimage="file=&apos;btn_channel.png&apos; source=&apos;25,0,49,13&apos;" pushedimage="file=&apos;btn_channel.png&apos; source=&apos;50,0,74,13&apos;" />-->
+            <Button name="menubtn" tooltip="菜单" float="true" pos="32,8,0,0" width="28" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_menu_normal.png" hotimage="btn_menu_highlight.png" pushedimage="btn_menu_down.png" />
+            <Button name="minbtn" tooltip="最小化" float="true" pos="69,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;45,0,60,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+            <Button name="maxbtn" tooltip="最大化" float="true" pos="97,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;60,0,75,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+            <Button name="restorebtn" tooltip="还原" visible="false" float="true" pos="96,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;75,0,90,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+            <Button name="closebtn" tooltip="关闭" float="true" pos="125,3,0,0" width="36" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;90,0,105,15&apos; dest=&apos;11,8,26,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_close.png&apos; source=&apos;36,0,72,30&apos;" pushedimage="file=&apos;btn_style_close.png&apos; source=&apos;72,0,108,30&apos;" />
+        </HorizontalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout name="ctnClient" >
+        <TileLayout inset="0,0,0,0" childpadding="5" name="ctnPrview" columns="2" itemsize="0,0" vscrollbar="false" hscrollbar="false" />
+        <!--<VerticalLayout bkcolor="#FF070707" width="200" align="right">
+            <HorizontalLayout name="ctnTitle" height="40" bkimage="caption_bk.png" bkcolor="#FF0E1A2F" bkcolor2="#FF060606">
+                <Text text="频道名" height="40" textcolor="#FF447AA1" font="0" />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="FF707070#" bordersize="1" bordercolor="#FF707070">
+              <Control name="wndVideo" visible="true" bkcolor="#00"/>
+              <Slider name="slSwitch" width="90" height="200" bkimage="slider\track.png" textcolor="#FF000000" align="right" min="0" max="100" value="0" hor="false" thumbimage="slider\swbar.png" thumbsize="20,36" />
+            </HorizontalLayout>
+            <HorizontalLayout visible="false" height="2" bkcolor="#ff000000" bkcolor2="#ff282828">   
+            </HorizontalLayout>
+        </VerticalLayout>-->
+    </HorizontalLayout>
+    <HorizontalLayout height="2" bkcolor="#ff000000" bkcolor2="#ff282828">   
+    </HorizontalLayout> 
+</VerticalLayout>
+</Window>

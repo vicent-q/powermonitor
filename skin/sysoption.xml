@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="400,260" caption="0,0,0,30" roundcorner="5,5,5,5" sizebox="4,4,4,4" mininfo="400,260" showdirty="false">
+<Font id="0" name="宋体" size="13" bold="false"/>
+<Font id="1" name="宋体" size="12"/>
+<Style name="listex_item_style" value="checkboxwidth=&quot;16&quot; checkboxheight=&quot;16&quot; checkboxnormalimage=&quot;file='unchecked.png'&quot; checkboxselectedimage=&quot;file='checked.png'&quot;"/>
+<Style name="combo_style" value="height=&quot;50&quot; textcolor=&quot;#FFFFFFFF&quot; textpadding=&quot;4,1,28,1&quot; normalimage=&quot;res='combo.png' source='0,0,161,28' corner='2,2,28,2'&quot; hotimage=&quot;res='combo.png' source='0,28,161,56' corner='2,2,28,2'&quot; pushedimage=&quot;res='combo.png' source='0,56,161,84' corner='2,2,28,2'&quot;" />
+<Style name="edit_style" value="textpadding=&quot;6,6,6,6&quot; bkcolor=&quot;#FF666666&quot; nativebkcolor=&quot;#FF666666&quot; bkimage=&quot;res='edit_bk.png' corner='6,6,6,6'&quot;" />
+<Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+<VerticalLayout bkimage="file='dlgbg.png' corner='10,100,10,10' hole='true'" bkcolor="#FFEEF2F3">
+    <HorizontalLayout height="37" inset="0,2,0,0">
+        <VerticalLayout>
+            <Text text="系统选项" textcolor="#FFFFFFFF" font="1" float="true" pos="10,10,170,30"></Text>
+        </VerticalLayout>
+        <VerticalLayout width="70">
+            <Button float="true" pos="0,0,28,17" name="minbtn" maxwidth="28" maxheight="17" normalimage="file='max_min.png' source='0,0,28,17'" hotimage="file='max_min_h.png' source='0,0,28,17'" pushedimage="file='max_min_h.png' source='0,0,28,17'"/>
+            <Button float="true" pos="28,0,56,17" name="closebtn" maxwidth="28" maxheight="17" normalimage="file='max_min.png' source='28,0,56,17'" hotimage="file='max_min_h.png' source='28,0,56,17'" pushedimage="file='max_min_h.png' source='28,0,56,17'"/>
+        </VerticalLayout>
+    </HorizontalLayout>
+	<HorizontalLayout height="40" childvalign="vcenter" inset="15,0,3,3">
+		<Label text="画面分割:" textcolor="#FF000000" glowsize="0" font="font13" width="80"/>
+		<HorizontalLayout height="23" >
+              <Combo name="menudeleave" itemfont="2" width="80" style="combo_style" textcolor="#FFFFFFFF" dropbox="hscrollbar=&quot;false&quot;" >
+                <!--<ListLabelElement text="2*2" height="23" />
+                <ListLabelElement text="3*3" height="23" width="60" />
+                <ListLabelElement text="4*4" height="23" width="60" />
+                <ListLabelElement text="5*5" height="23" width="60" />
+                <ListLabelElement text="6*6" height="23" width="60" />-->
+              </Combo>
+        </HorizontalLayout>
+		<Control />
+    </HorizontalLayout>
+	<Label height="1" bkimage="hor_line.png"/>
+    <HorizontalLayout height="40" childvalign="vcenter" inset="15,0,3,3">
+            <Label text="切换间隔:" textcolor="#FF000000" glowsize="0" font="font13" width="80"/>
+            <HorizontalLayout height="24" childpadding="2" align="left">
+              <Edit name="switchperiod" tipvalue="30" style="edit_style" width="50" /><Label text="秒" textcolor="#FF000000" glowsize="0" font="font13" width="80"/>
+            </HorizontalLayout>
+			<Control />
+    </HorizontalLayout>
+	<Label height="1" bkimage="hor_line.png"/>
+	<HorizontalLayout height="40" childvalign="vcenter" inset="15,0,3,3">
+		<Label text="渲染模式:" textcolor="#FF000000" glowsize="0" font="font13" width="80"/>
+		<HorizontalLayout height="23" >
+              <Combo name="rendertype" itemfont="2" width="80" style="combo_style" textcolor="#FFFFFFFF" dropbox="hscrollbar=&quot;false&quot;" >
+                <!--<ListLabelElement text="GDI" selected="true" height="23" />
+                <ListLabelElement text="D3D" height="23" width="60" />
+				-->
+              </Combo>
+        </HorizontalLayout>
+		<Control />
+    </HorizontalLayout>
+	<Label height="1" bkimage="hor_line.png"/>
+	<HorizontalLayout inset="3,0,3,3" >
+	</HorizontalLayout>
+	<Label height="1" bkimage="hor_line.png"/>
+    <HorizontalLayout inset="3,0,3,3" height="40" >
+        <HorizontalLayout height="40">
+        </HorizontalLayout>
+		<HorizontalLayout width="120" height="40" >
+			<Button name="btnApply" text="确定" font="0" float="false" maxwidth="63" maxheight="23" normalimage="file='button.png' source='0,0,63,23'" hotimage="file='button.png' source='0,23,63,46'" pushedimage="file='button.png' source='0,23,63,46'"/>
+			<Control width="10"/>
+			<Button name="btnCancel" text="取消" font="0" float="false" maxwidth="63" maxheight="23" normalimage="file='button.png' source='0,0,63,23'" hotimage="file='button.png' source='0,23,63,46'" pushedimage="file='button.png' source='0,23,63,46'"/>
+		</HorizontalLayout>
+		<HorizontalLayout height="40" width="10">
+        </HorizontalLayout>
+    </HorizontalLayout>
+</VerticalLayout>
+</Window>

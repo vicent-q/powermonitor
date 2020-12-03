@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="180,140">
+<VerticalLayout height="140" bordersize="1" bkcolor="#FF006400">
+    <HorizontalLayout name="ctnTitle" height="30" bkcolor="#FF006400" bkcolor2="#FF070707">
+        <Control width="6"/><Label name="labChannelName" text="频道名" height="26" textcolor="#FFD1DAE8" disabledtextcolor="#FFA7A6AA" align="left" valign="vcenter"/>
+    </HorizontalLayout>
+    <HorizontalLayout bordersize="0" bordercolor="#FF707070">
+        <Label name="wndVideo" visible="true" text="无信号" textcolor="#FF888888" bkcolor="#FF070707" align="center" valign="vcenter"/>
+        <Progress name="progress" align="right" valign="top" width="2" height="110" textcolor="#FF333333" bkcolor="#FF7CFC00" forecolor="#ff000000" value="0" min="0" max="100" hor="false"/>
+    </HorizontalLayout>
+    <HorizontalLayout visible="true" height="1" bkcolor="#ff000000" bkcolor2="#ff282828">   
+    </HorizontalLayout>
+</VerticalLayout>
+</Window>
